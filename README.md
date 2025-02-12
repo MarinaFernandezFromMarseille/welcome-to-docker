@@ -27,17 +27,17 @@ Open `http://localhost:8088` in your browser.
 
 2.J'ai ensuite modifié Le CSS de base dans App.css ainsi que le message d'affichage dans App.js:
 
-![css](./src/Images/21.png)
-![js](./src/Images/22.png)
+![css](./src/Images/21.PNG)
+![js](./src/Images/22.PNG)
 
 3. Pour que les modifications soient visibles, j'ai d'abbord stoppé puis supprimé mon container, puis je l'ai built et run de nouveau. 
 
-![terminal1](./src/Images/18.png)
-![terminal2](./src/Images/19.png)
+![terminal1](./src/Images/18.PNG)
+![terminal2](./src/Images/19.PNG)
 
 4. Voilà le résultat des modifications:
 
-![Congratulations 2](./src/Images/20.png)
+![Congratulations 2](./src/Images/20.PNG)
 
 ### DESOLEE J'AI OUBLIE DE COMMIT REGULIEREMENT 😬
 
