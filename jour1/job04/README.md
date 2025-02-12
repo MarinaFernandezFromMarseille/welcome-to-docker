@@ -16,6 +16,12 @@
 
 ![index.php](./images/php4.PNG)
 
+### STOPPAGE DU CONTAINER
+
+![index.php](./images/php5.PNG)
+
+
+
 
 
 
