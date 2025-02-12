@@ -41,7 +41,11 @@ D'abord, j'ai construis mon container "welcome-to-docker". il ressemblait à cel
 
 ### PARTAGE DE L'IMAGE
 
-Tout d'abord, je dois me connecter à l'aide de la commmande "docker login".
+Tout d'abord, je dois me connecter à l'aide de la commmande "docker login -u <username>".
+
+![login](./src/Images/24.PNG)
+
+
 
 
 
