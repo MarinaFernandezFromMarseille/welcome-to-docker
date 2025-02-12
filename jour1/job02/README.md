@@ -2,12 +2,12 @@
 
 D'abord, j'ai construis mon container "welcome-to-docker". il ressemblait à celà:
 
-![Congratulations 1](./src/Images/23.png)
+![Congratulations 1](23.png)
 
 2.J'ai ensuite modifié Le CSS de base dans App.css ainsi que le message d'affichage dans App.js:
 
-![css](./src/Images/21.PNG)
-![js](./src/Images/22.PNG)
+![css](21.PNG)
+![js](22.PNG)
 
 3. Pour que les modifications soient visibles, j'ai d'abbord stoppé puis supprimé mon container, puis je l'ai built et run de nouveau. 
 
