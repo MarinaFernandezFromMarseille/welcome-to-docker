@@ -8,5 +8,17 @@
 
 ![index.php](php2.PNG)
 
+# CONSTRUCTION DE L'IMAGE DOCKER
+
+![index.php](php3.PNG)
+
+# LANCEMENT DU CONTAINER
+
+![index.php](php4.PNG)
+
+
+
+
+
 
 
