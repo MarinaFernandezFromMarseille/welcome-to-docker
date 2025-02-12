@@ -49,6 +49,10 @@ D'abord, j'ai construis mon container "welcome-to-docker". il ressemblait à cel
 
 ![tag](./src/Images/25.PNG)
 
+3. Puis j'effectue mon partage avec un push.
+
+![push](./src/Images/26.PNG)
+
 
 
 
