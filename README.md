@@ -41,9 +41,14 @@ D'abord, j'ai construis mon container "welcome-to-docker". il ressemblait à cel
 
 ### PARTAGE DE L'IMAGE
 
-Tout d'abord, je dois me connecter à l'aide de la commmande "docker login -u <username>".
+1. Tout d'abord, je dois me connecter à l'aide de la commmande "docker login -u <username>".
 
 ![login](./src/Images/24.PNG)
+
+2. Puis Je rajoute un tag à mon image, mon pseudo ainsi que "latest"
+
+![tag](./src/Images/25.PNG)
+
 
 
 
