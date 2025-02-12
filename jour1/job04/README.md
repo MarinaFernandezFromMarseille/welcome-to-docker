@@ -1,0 +1,7 @@
+### Jour 01 - Job 04
+
+# FICHIER PHP AFFICHANT LES INFOS SUR LE SERVEUR
+
+![index.php](php1.PNG)
+
+
