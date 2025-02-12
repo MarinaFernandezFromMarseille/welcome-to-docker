@@ -53,6 +53,12 @@ D'abord, j'ai construis mon container "welcome-to-docker". il ressemblait à cel
 
 ![push](./src/Images/26.PNG)
 
+### RECUPERATION DE L'IMAGE D'UN COLLABORATEUR 
+
+J'ai choisi de récupérer l'image de ma collègue Aicha, et pour ce faire j'ai utilisé un pull avec son pseudo et le nom de son image:
+
+![image Aicha](./src/Images/27.PNG)
+
 
 
 
