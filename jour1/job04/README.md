@@ -2,19 +2,19 @@
 
 # FICHIER PHP AFFICHANT LES INFOS SUR LE SERVEUR
 
-![index.php](php1.PNG)
+![index.php](./images/php1.PNG)
 
 # CREATION DU FICHIER DOCKERFILE ET ENVIRONNEMENT APACHE
 
-![index.php](php2.PNG)
+![index.php](./images/php2.PNG)
 
 # CONSTRUCTION DE L'IMAGE DOCKER
 
-![index.php](php3.PNG)
+![index.php](./images/php3.PNG)
 
 # LANCEMENT DU CONTAINER
 
-![index.php](php4.PNG)
+![index.php](./images/php4.PNG)
 
 
 
