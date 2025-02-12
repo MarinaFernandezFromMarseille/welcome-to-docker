@@ -70,6 +70,8 @@ Comme on peut le voir, je peux effectivement la visualiser:
 
 ![image Aicha](./src/Images/29.PNG)
 
+### Je N'AI PAS REUSSI A MODIFIER L'IMAGE DE AICHA...
+
 
 
 
