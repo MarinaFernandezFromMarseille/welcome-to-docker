@@ -21,7 +21,7 @@ Open `http://localhost:8088` in your browser.
 
 ### VISUALISATION DE L'EXERCICE
 
-1.D'abord, j'ai construis mon container "welcome-to-docker". il ressemblait à celà:
+D'abord, j'ai construis mon container "welcome-to-docker". il ressemblait à celà:
 
 ![Congratulations 1](./src/Images/23.png)
 
@@ -39,7 +39,13 @@ Open `http://localhost:8088` in your browser.
 
 ![Congratulations 2](./src/Images/20.PNG)
 
-### DESOLEE J'AI OUBLIE DE COMMIT REGULIEREMENT 😬
+### PARTAGE DE L'IMAGE
+
+Tout d'abord, je dois me connecter à l'aide de la commmande "docker login".
+
+
+
+
 
 
 
