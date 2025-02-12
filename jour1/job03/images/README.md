@@ -43,6 +43,16 @@ On peut voir que le container est à présent inactif (la pastille verte a dispa
 
 Suite à ça, le container a bien disparu.
 
+# Suppression de l'image par son ID:
+
+![pengbai](pengbai13.PNG)
+
+L'image pengbai/docker-supermario a bien été supprimée
+
+![pengbai](pengbai14.PNG)
+
+
+
 
 
 
