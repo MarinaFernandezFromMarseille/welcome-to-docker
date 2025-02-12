@@ -37,6 +37,12 @@ On peut voir que le container est à présent inactif (la pastille verte a dispa
 
 ![pengbai](pengbai10.PNG)
 
+# Suppression du container par son nom:
+
+![pengbai](pengbai11.PNG)
+
+Suite à ça, le container a bien disparu.
+
 
 
 
