@@ -4,4 +4,9 @@
 
 ![index.php](php1.PNG)
 
+# CREATION DU FICHIER DOCKERFILE ET ENVIRONNEMENT APACHE
+
+![index.php](php2.PNG)
+
+
 
