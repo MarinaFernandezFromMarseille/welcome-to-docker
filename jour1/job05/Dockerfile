@@ -1,44 +1,35 @@
-### Dockerfile
-FROM nginx:latest
+# Utiliser une image de base contenant PHP et Nginx
+FROM php:7.4-fpm
 
-# Copier les fichiers du jeu dans le répertoire HTML de Nginx
-COPY index.html /usr/share/nginx/html/
-COPY save.php /usr/share/nginx/html/
+# Installer Nginx
+RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
 
-# Installer PHP et les extensions nécessaires
-RUN apt-get update && apt-get install -y php-fpm && rm -rf /var/lib/apt/lists/*
+# Copier les fichiers du jeu dans le conteneur
+COPY index.html /var/www/html/
+COPY save.php /var/www/html/
+COPY results.json /var/www/html/
 
-# Configuration Nginx pour interpréter PHP
+# Donner les bons droits
+RUN chmod -R 777 /var/www/html/results.json
+
+# Configurer Nginx
 RUN echo 'server {
     listen 80;
-    root /usr/share/nginx/html;
+    root /var/www/html;
     index index.html index.php;
     location / {
         try_files $uri $uri/ =404;
     }
     location ~ \.php$ {
+        include fastcgi_params;
         fastcgi_pass 127.0.0.1:9000;
         fastcgi_index index.php;
-        include fastcgi.conf;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
     }
-}' > /etc/nginx/conf.d/default.conf
+}' > /etc/nginx/sites-available/default
 
+# Exposer le port 80 pour accéder au jeu
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
-
-### docker-compose.yml
-version: '3.8'
-
-services:
-  web:
-    build: .
-    ports:
-      - "8080:80"
-    volumes:
-      - game-results:/usr/share/nginx/html
-    container_name: morpion_game
-
-volumes:
-  game-results:
-    driver: local
+# Démarrer PHP et Nginx
+CMD service nginx start && php-fpm
