@@ -6,6 +6,19 @@
 
  ![yml](./images/image4.PNG)
 
+ 1. Dockerfile:
+
+  ![yml](./images/dockerfile.PNG)
+
+ 2. server.js :
+
+ ![yml](./images/server.js.PNG)
+
+ 3. package.json:
+
+ ![yml](./images/package.PNG)
+
+
 ## ETAPE 3
 
  ![yml](./images/image5.PNG)
