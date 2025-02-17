@@ -12,6 +12,11 @@
 
   ![yml](./images/image6.PNG)
 
+## ETAPE 4
+
+ ![yml](./images/image7.PNG)
+ ![yml](./images/image8.PNG)
+
 
 
 
