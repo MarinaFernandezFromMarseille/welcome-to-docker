@@ -22,18 +22,14 @@
  2.Accès au frontend via http://localhost:8080 affichant l'état de
 l'API.
 
- ![yml](./images/image6.PNG)
+ ![yml](./images/image10.PNG)
 
  3.Accès à mysql via http://localhost:3306 :
 
- ![yml](./images/image9.PNG)
+ ![yml](./images/image11.PNG)
 
  4. Accès sql, visualisation de la database et quitter:
 
-
- ![yml](./images/image10.PNG)
-
-  ![yml](./images/image11.PNG)
 
   ![yml](./images/image12.PNG)
 
