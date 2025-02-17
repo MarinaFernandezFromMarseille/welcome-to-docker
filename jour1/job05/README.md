@@ -35,9 +35,15 @@ Après avoir créé les fichiers index.html, save.php et results.json, je rédig
 ### RESULTATS PARTIES
 
 
-après avoir joué plusieurs parties , j'affiche les resultats dans Docker desktop (results.json)
+après avoir joué plusieurs parties , j'affiche les resultats dans Docker desktop (volumes -> results.json)
 
 ![Imagedocker](./images/tictactoe9.PNG)![Imagedocker](./images/tictactoe10.PNG)
+
+### STOPPER LE CONTAINER
+
+![Imagedocker](./images/tictactoe11.PNG)
+
+
 
 
 
