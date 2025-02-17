@@ -1,35 +1,16 @@
-# Utiliser une image de base contenant PHP et Nginx
-FROM php:7.4-fpm
+# Utiliser l'image officielle Nginx
+FROM nginx:alpine
 
-# Installer Nginx
-RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
+# Copier les fichiers de l'application dans le conteneur
+COPY index.html /usr/share/nginx/html/index.html
+COPY save.php /usr/share/nginx/html/save.php
+COPY results.json /usr/share/nginx/html/results.json
 
-# Copier les fichiers du jeu dans le conteneur
-COPY index.html /var/www/html/
-COPY save.php /var/www/html/
-COPY results.json /var/www/html/
+# Créer un volume pour sauvegarder les résultats du jeu
+VOLUME /usr/share/nginx/html/results.json
 
-# Donner les bons droits
-RUN chmod -R 777 /var/www/html/results.json
-
-# Configurer Nginx
-RUN echo 'server {
-    listen 80;
-    root /var/www/html;
-    index index.html index.php;
-    location / {
-        try_files $uri $uri/ =404;
-    }
-    location ~ \.php$ {
-        include fastcgi_params;
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-    }
-}' > /etc/nginx/sites-available/default
-
-# Exposer le port 80 pour accéder au jeu
+# Exposer le port 80 pour Nginx
 EXPOSE 80
 
-# Démarrer PHP et Nginx
-CMD service nginx start && php-fpm
+# Démarrer Nginx
+CMD ["nginx", "-g", "daemon off;"]
