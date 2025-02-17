@@ -28,9 +28,17 @@ Après avoir créé les fichiers index.html, save.php et results.json, je rédig
 
 ![Imagedocker](./images/tictactoe7.PNG)
 
-### AFFICHER LE CONTENU DU VOLUME
+### AFFICHER LE CONTENU DE RESULTS.JSON
 
 ![Imagedocker](./images/tictactoe8.PNG)
+
+### RESULTATS PARTIES
+
+
+après avoir joué plusieurs parties , j'affiche les resultats dans Docker desktop (results.json)
+
+![Imagedocker](./images/tictactoe9.PNG)![Imagedocker](./images/tictactoe10.PNG)
+
 
 
 
