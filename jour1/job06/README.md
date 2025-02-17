@@ -28,7 +28,7 @@ l'API.
 
  ![yml](./images/image9.PNG)
 
- 4. accès sql, visualisation de la database et quitter:
+ 4. Accès sql, visualisation de la database et quitter:
 
 
  ![yml](./images/image10.PNG)
@@ -36,7 +36,7 @@ l'API.
   ![yml](./images/image11.PNG)
 
   ![yml](./images/image12.PNG)
-  
+
   ![yml](./images/image13.PNG)
 
 
