@@ -12,7 +12,7 @@
 
  2. server.js :
 
- ![yml](./images/server.js.PNG)
+ ![yml](./images/server.js1.PNG)
 
  3. package.json:
 
