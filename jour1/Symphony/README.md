@@ -6,22 +6,23 @@
 
 ![bloc1](./images/doc1.PNG)
 
-services: indique que l’on définit des services Docker à exécuter.
+* services: indique que l’on définit des services Docker à exécuter.
 
-app: est le nom du service que l’on configure.
+* app: est le nom du service que l’on configure.
 
-image: php:8.2-fpm spécifie que le conteneur utilisera l’image officielle de PHP 8.2 en mode FPM.
+* image: php:8.2-fpm spécifie que le conteneur utilisera l’image officielle de PHP 8.2 en mode FPM.
 
-container_name: symfony_app donne un nom personnalisé au conteneur, ce qui facilite son identification.
+* container_name: symfony_app donne un nom personnalisé au conteneur, ce qui facilite son identification.
 
-working_dir: /var/www/html définit le dossier dans lequel le conteneur exécutera les commandes.
+* working_dir: /var/www/html définit le dossier dans lequel le conteneur exécutera les commandes.
 
-volumes: permet de partager des fichiers entre l’ordinateur et le conteneur.
-- ./app:/var/www/html relie le dossier ./app de l’ordinateur au dossier /var/www/html dans le conteneur, pour synchroniser les fichiers.
-- 
-networks: indique que le conteneur sera connecté à un réseau Docker.
+* volumes: permet de partager des fichiers entre l’ordinateur et le conteneur.
+  
+* ./app:/var/www/html relie le dossier ./app de l’ordinateur au dossier /var/www/html dans le conteneur, pour synchroniser les fichiers.
+  
+* networks: indique que le conteneur sera connecté à un réseau Docker.
 
-- symfony_network ajoute ce conteneur au réseau nommé symfony_network, ce qui permet la communication avec d’autres services (comme une base de données).
+* symfony_network ajoute ce conteneur au réseau nommé symfony_network, ce qui permet la communication avec d’autres services (comme une base de données).
 
 ### BLOC 2
 
@@ -168,7 +169,23 @@ Ce service est essentiel pour stocker et gérer les données d’une application
 * phpmyadmin_data: est un volume nommé qui pourrait être utilisé pour stocker des données spécifiques à phpMyAdmin, bien que dans cette configuration, il n’ait pas encore de lien explicite avec un service.
 
 
+# DESCRIPTION DU DOCKERFILE
 
+![bloc 4](./images/doc7.PNG)
+
+* networks: indique la définition des réseaux utilisés par les services.
+
+
+* symfony_network: crée un réseau Docker nommé symfony_network, auquel les services peuvent être connectés pour communiquer entre eux.
+
+* driver: bridge précise que le réseau utilise le mode bridge, qui est le mode par défaut permettant aux conteneurs de communiquer entre eux tout en étant isolés du réseau externe.
+
+* volumes: déclare des volumes pour stocker des données de manière persistante.
+
+
+* db_data: est un volume nommé utilisé pour stocker les données de MySQL, afin qu’elles ne soient pas perdues si le conteneur est supprimé ou redémarré.
+
+* phpmyadmin_data: est un volume nommé qui pourrait être utilisé pour stocker des données spécifiques à phpMyAdmin, bien que dans cette configuration, il n’ait pas encore de lien explicite avec un service.
 
 
 
