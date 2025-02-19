@@ -188,6 +188,35 @@ Ce service est essentiel pour stocker et gérer les données d’une application
 * phpmyadmin_data: est un volume nommé qui pourrait être utilisé pour stocker des données spécifiques à phpMyAdmin, bien que dans cette configuration, il n’ait pas encore de lien explicite avec un service.
 
 
+# INSTALLATION DE SYMFONY VIA DEUX COMMANDES
+
+## Commande numéro 1
+
+![commande 1](./images/symphony2.PNG)
+
+Cette commande installe Symfony avec les composants nécessaires pour un projet web complet (avec Twig, Doctrine, etc.).
+Comme on peut le voir ci-dessous, de nombreuses dépendances et packages sont installés.
+
+![commande 1](./images/symphony3.PNG)
+![commande 1](./images/symphony4.PNG)
+
+## Commande numéro 2
+
+![commande 1](./images/symphony1.PNG)
+
+
+Cette commande installe uniquement le noyau minimal de Symfony, nous permettant d'ajouter uniquement les composants nécessaires au projet (j'ai au préalable créé un nouveau dossier pour executer la commande  l'intérieur et j'y suis ensuite rentrée par le terminal).
+On peut voir ci-dessous que beaucoup moins d'éléments ont été installés.
+
+![commande 1](./images/symphony5.PNG)
+
+
+
+
+
+
+
+
 
 
 
